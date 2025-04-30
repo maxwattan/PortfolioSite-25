@@ -40,7 +40,6 @@ function App() {
           <h1> Welcome </h1>
           <h2>Take a Deep Breath...</h2>
           <h3> and Exhale...</h3>
-          {/* <img src={meditate} alt="meditate" className="meditate"></img> */}
         </div>
       </section>
 
@@ -110,49 +109,63 @@ function App() {
         </h1>
 
         <div className="project-card">
-        <img src={projectOne} alt="projectOne" ></img>
-        <div className="project-content">
-        <p className="project-description">
-          This is the first app I created when I first learned to code. It’s a
-          recipe finder that suggests kitchen food ideas along with a list of
-          ingredients and cooking instructions. The app integrates an API and
-          includes some basic CSS styling. It’s a great reminder of how I got
-          started and how far I have come.
-        </p>
-        <button className="project-button">
-          <a href="https://zippy-horse-6f8f0e.netlify.app/" className="recipe-finder"> Live Site! </a>
-        </button>
-        </div>
+          <img src={projectOne} alt="projectOne"></img>
+          <div className="project-content">
+            <p className="project-description">
+              This is the first app I created when I first learned to code. It’s
+              a recipe finder that suggests kitchen food ideas along with a list
+              of ingredients and cooking instructions. The app integrates an API
+              and includes some basic CSS styling. It’s a great reminder of how
+              I got started and how far I have come.
+            </p>
+            <button className="project-button">
+              <a
+                href="https://zippy-horse-6f8f0e.netlify.app/"
+                className="recipe-finder"
+              >
+                {" "}
+                Live Site!{" "}
+              </a>
+            </button>
+          </div>
         </div>
 
         <div className="project-card">
-        <img src={projecttwo} alt="projectTwo"></img>
-        <div className="project-content">
-        <p className="project-description">
-          Care Village is a four-person capstone team with a mission to empower
-          parents and caregivers on their unique parenting journeys while
-          fostering a compassionate and supportive community. We provide a
-          platform that seamlessly connects individuals with diverse parenting
-          methods and offers a dedicated space for the generosity of giving to
-          children in need. We believe in the power of knowledge-sharing and
-          collaboration among parents, grandparents, guardians, and loved ones.
-        </p>
-        <button className="project-button">
-          <a href="https://carevillage.netlify.app/" className="care-village">
-            Live Site!
-          </a>
-        </button>
+          <img src={projecttwo} alt="projectTwo"></img>
+          <div className="project-content">
+            <p className="project-description">
+              Care Village is a four-person capstone team with a mission to
+              empower parents and caregivers on their unique parenting journeys
+              while fostering a compassionate and supportive community. We
+              provide a platform that seamlessly connects individuals with
+              diverse parenting methods and offers a dedicated space for the
+              generosity of giving to children in need. We believe in the power
+              of knowledge-sharing and collaboration among parents,
+              grandparents, guardians, and loved ones.
+            </p>
+            <button className="project-button">
+              <a
+                href="https://carevillage.netlify.app/"
+                className="care-village"
+              >
+                Live Site!
+              </a>
+            </button>
+          </div>
         </div>
-        </div>
-
       </section>
 
       <section className="contact" id="contact">
-        <h1 className="contact"> Contact </h1>
-        <p>Contact – Email or form (does not need to be functional)</p>
+        <h1 className="contact-title"> Contact </h1>
+        <h3 className="contact-email">
+          {" "}
+          Email : <a> MW@icloud.com</a>
+        </h3>
       </section>
 
-      <footer className="footer" id="footer"></footer>
+      <footer className="footer" id="footer">
+        <h5> © MW Studios 2025</h5>
+      </footer>
     </div>
   );
 }
