@@ -182,7 +182,7 @@ function App() {
         <h1 className="contact-title"> Contact </h1>
         <h3 className="contact-email">
           {" "}
-          Email : <a> MWDevStudios@icloud.com</a>
+          Email : <a> MWDevStudios@icloud.com </a>
         </h3>
       </section>
 
