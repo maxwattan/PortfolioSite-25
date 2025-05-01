@@ -44,6 +44,19 @@ function App() {
       </section>
 
       <section className="about" id="about">
+        <video
+          className="about-background-video"
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source
+            // src="https://videos.pexels.com/video-files/9484987/9484987-uhd_1440_2560_25fps.mp4"
+            src="https://videos.pexels.com/video-files/5336203/5336203-uhd_2732_1440_30fps.mp4"
+            type="video/mp4"
+          ></source>
+        </video>
         <div className="about-content">
           <h1 className="about-title">Hello, My name is Max!</h1>
 
@@ -84,7 +97,7 @@ function App() {
               Before entering the tech world, I pursued a career in hospitality
               with my Bachelor's in Hospitality Management. Due to physical
               injuries, I found it challenging to physically keep up with the
-              fast-paced enviornment. This led me to transition my skills into
+              fast-paced environment. This led me to transition my skills into
               tech. As a full stack web developer, I am passionate about
               creating platforms that enhance our lives, benefit our communities
               and support our environment. I bring a unique perspective and a
@@ -93,7 +106,7 @@ function App() {
 
             <p className="hobbies">
               Outside of coding some of my hobbies includes: cooking, baking,
-              fishing, and exercising.
+              fishing, and light exercising/stretching.
             </p>
 
             <p className="fun-fact">
@@ -107,50 +120,60 @@ function App() {
         <h1 className="projects-title" id="projects">
           Projects
         </h1>
-
-        <div className="project-card">
-          <img src={projectOne} alt="projectOne"></img>
-          <div className="project-content">
-            <p className="project-description">
-              This is the first app I created when I first learned to code. It’s
-              a recipe finder that suggests kitchen food ideas along with a list
-              of ingredients and cooking instructions. The app integrates an API
-              and includes some basic CSS styling. It’s a great reminder of how
-              I got started and how far I have come.
-            </p>
-            <button className="project-button">
-              <a
-                href="https://zippy-horse-6f8f0e.netlify.app/"
-                className="recipe-finder"
-              >
-                {" "}
-                Live Site!{" "}
-              </a>
-            </button>
+        <div className="projects-container">
+          <div className="project-card">
+            <img src={projectOne} alt="projectOne"></img>
+            <div className="project-content">
+              <p className="project-description">
+                This is the first app I created when I first learned to code.
+                It’s a recipe finder that suggests kitchen food ideas along with
+                a list of ingredients and cooking instructions. The app
+                integrates an API and includes some basic CSS styling. It’s a
+                great reminder of how I first got started and how far I have
+                come.
+              </p>
+              <button className="project-button">
+                <a
+                  href="https://zippy-horse-6f8f0e.netlify.app/"
+                  className="recipe-finder"
+                >
+                  {" "}
+                  Live Site!{" "}
+                </a>
+              </button>
+            </div>
           </div>
-        </div>
 
-        <div className="project-card">
-          <img src={projecttwo} alt="projectTwo"></img>
-          <div className="project-content">
-            <p className="project-description">
-              Care Village is a four-person capstone team with a mission to
-              empower parents and caregivers on their unique parenting journeys
-              while fostering a compassionate and supportive community. We
-              provide a platform that seamlessly connects individuals with
-              diverse parenting methods and offers a dedicated space for the
-              generosity of giving to children in need. We believe in the power
-              of knowledge-sharing and collaboration among parents,
-              grandparents, guardians, and loved ones.
-            </p>
-            <button className="project-button">
-              <a
-                href="https://carevillage.netlify.app/"
-                className="care-village"
-              >
-                Live Site!
-              </a>
-            </button>
+          <div className="project-card">
+            <img src={projecttwo} alt="projectTwo"></img>
+            <div className="project-content">
+              <p className="project-description">
+                Care Village is a four-person capstone team with a mission to
+                empower parents and caregivers on their unique parenting
+                journeys while fostering a compassionate and supportive
+                community. We provide a platform that seamlessly connects
+                individuals with diverse parenting methods and offers a
+                dedicated space for the generosity of giving to children in
+                need. We believe in the power of knowledge-sharing and
+                collaboration among parents, grandparents, guardians, and loved
+                ones.
+              </p>
+              <button className="project-button">
+                <a
+                  href="https://carevillage.netlify.app/"
+                  className="care-village"
+                >
+                  Live Site!
+                </a>
+              </button>
+            </div>
+          </div>
+
+          <div className="project-card">
+            <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjNjYW5vaTNvNzZlaHlmdzlwb2swYzcybW5jZmNydGlubTFycHVzdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l397abq3tzY5HpTCE/giphy.gif"></img>
+            <div className="project-content">
+              <p className="project-description"> More projects to come...</p>
+            </div>
           </div>
         </div>
       </section>

@@ -100,14 +100,26 @@ border-radius: 5px;
     padding: 2rem;
     border-radius: 8px;
     margin:  auto;
-    background-image: url(./assets/galaxy.jpeg);
-    background-size: cover;
+    /* background-image: url(./assets/galaxy.jpeg); */
+    background-size: cover; 
     background-position: center;
     position: relative;   
+    overflow: hidden;
+}
+.about-background-video{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
 }
 .about-content {
     text-align: center;
     margin-top: 50px;
+    z-index: 1;
+    position: relative;
 }
 .about-image {
     border-radius: 25%;
@@ -131,10 +143,11 @@ border-radius: 5px;
     margin-bottom: 2rem;
 }
 .background-content{
-     border: solid #ddd;
-     border-radius: 20px;
-     padding: 40px;
-     margin: 10px;
+     border: solid orange;
+     border-radius: 10px;
+     padding: 20px;
+     margin: 5px; 
+     justify-content: center;
      background-color:black;
 }
 .background-title {
@@ -142,15 +155,16 @@ border-radius: 5px;
     margin-bottom: 1rem;
 }
 .background-description {
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin-bottom: 1rem;
 }
 .hobbies {
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin-bottom: 1rem;
 }
 .fun-fact {
-    font-size: 1.3rem;
+    font-size: 1rem;
+    font-style: italic;
     margin-bottom: 1rem;
     color: orange;    
 }
@@ -168,22 +182,28 @@ border-radius: 5px;
     font-size: 3rem;
     margin-bottom: 20px;
 }
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+}
 .project-card{
     font-size: 1.3rem;
     border-radius: 20px;
     margin: 20px;
-    overflow: hidden;
-    transition: transform .3s ease;
+    /* overflow: hidden; */
     background-color: #333;
+    border: 2px solid orange;
 }
 .project-card:hover {
     transform: translateY(-5px);  
 }
 .project-card img {
-    max-width: 40%;
-    height: auto;
+    max-width: 250px;
+    height: 250px;
     border-radius: 10px;
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
     justify-content: center;
     margin-top: 25px;
 }
@@ -191,7 +211,8 @@ border-radius: 5px;
     padding: 25px;
 }
 .project-description {
-    font-size: 1.3rem;
+    font-size: 1rem;
+    font-style: oblique;
     margin-bottom: 25px;
 }
 .project-button {
@@ -214,11 +235,11 @@ border-radius: 5px;
 
 
 .contact {
-padding: 80px 20px ;
+padding: 10px 10px ;
 text-align: center;
 background-color: #333;
 border-radius: 20px;
-margin: 40px auto;
+margin: 20px auto;
 max-width: 800px;
 }
 .contact:hover {
@@ -242,7 +263,9 @@ max-width: 800px;
     height: 25px;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
 }
+
 
 
 
